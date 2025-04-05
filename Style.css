@@ -1,0 +1,754 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+    color: #00587d;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.card-img{
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+.containere{
+    width: 99%;
+    height: 100%;
+}
+.img-responsive{
+   height: 100%;
+   width: 100%; 
+}
+.btno{
+    border-radius: 5px;
+    border: none;
+    font-weight: bolder;
+    padding: 10px 40px;
+    margin: 10px;
+    cursor: pointer;
+}
+.btn-secondaire{
+    background: #00587d;    
+    color: white;
+}
+.btn-secondaire:hover{
+    background: #013b53;    
+}
+body{
+    color: #0e7570;
+    background: #f7f4f4;
+    width: 100%;
+    height: 100vh;  
+    overflow-x: hidden; 
+}
+span{
+    color: rgb(25 135 84);
+    font-weight: bolder;
+}
+.fleche-nav{
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    width: 50px;
+    height: 50px;
+    z-index: 1000;
+    border-radius: 50%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.souligne{
+    width: 100px;
+    height: 5px;
+    background: #0e7570;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+h2{
+    font-weight: bolder;
+}
+            /*--------Header--------*/
+.navigation .header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 100%;
+    background-color: white;
+    margin: auto;
+}
+.navigation .header .logo {
+    width: 150px;
+    height: 70px;
+}
+.header .information{
+margin: auto;
+}
+.header .information i:hover{
+    animation: icon-info 0.5s ease-in-out 0.01s infinite;
+}
+@keyframes icon-info{
+    0%{position: relative; left: -2px;}
+    50%{position: relative; right: -2px;}
+}
+.header b, .header p{
+font-size: 16px;
+}
+.navigation, nav{
+    width: 100%;
+    height: 90px;
+    background: white;
+}
+nav .reseaux{
+    background-color: white;
+    width: 25%;
+    height: 50px;
+    border-bottom-right-radius: 50px;
+}
+nav .reseaux .liens{
+    width: 90%;
+    margin: 15px auto;
+    padding: 0 5vw;
+    display: flex;
+    justify-content: space-between;
+}
+nav .reseaux .lien div{
+    width: 80%;
+    height: auto;
+    background: #5eda6f;
+    margin: 2px;
+}
+nav .reseaux .liens a{
+    text-decoration: none;
+    color: rgb(25 135 84);
+    padding: 5px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid rgb(25 135 84);
+    width: 60%;
+}
+nav .reseaux .liens div:hover {   
+    transform: scale(1.2);
+    transition: all 0.3+s ease-in;
+}
+nav .lien ul{
+    padding: 0 10px;
+    display: flex;
+    margin: auto;
+    list-style-type: none;
+}
+nav .lien ul a{
+    margin: 0 10px;
+    font-weight: 900;
+}
+nav .lien ul a::after{   
+content: "";
+display: block;
+width: 0%;
+height: 2px;
+background: #fff;
+margin: 0 auto;
+transition: width 0.5s ease-in-out;
+}
+nav .lien ul a:hover::after{
+width: 100%;
+}
+nav .button a{
+    border: 1px solid white ;
+    border-radius: 50px;
+}
+nav .button a:hover{
+    border: 1px solid white ;
+    background: white;
+    color: rgb(25 135 84) !important;
+}
+nav .btn{
+position: absolute;
+right: 10px;
+display: none;
+}
+
+            /*-------Accueil----------*/
+
+#accueil{
+    height: 80vh;
+}
+.carousel{
+    position: relative;
+    top: 45px;
+}
+.carousel .carousel-item{
+    height: 100%;
+    height: 70vh;
+}
+.accueil{
+    position: absolute;
+    top: 180px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    height: 70vh;
+}
+.accueil .block{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.accueil .texte p{
+    margin:20px auto 0;
+    width: 95%;
+    font-size: 55px;
+    color: white;
+    font-weight: 500;
+}
+.accueil .texte{
+    text-align: center;
+    width: 1000px;
+    height: 30%;
+    padding: 10px;
+    transform: translateX(-1000px);
+}
+            /*--------Dons-----------*/
+#dons{
+    padding: 50px;
+    width: 100%;
+}
+#dons .block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#dons .block .bloc{
+    width: 400px;
+    height: auto;
+}
+#dons .box{
+    margin: 10px 0;
+    background: #fff;
+    border-radius: 0 0 10px 10px;
+}
+#dons img:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+    cursor: pointer;
+}
+#dons h5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    height: 70px;
+}
+#dons .texte{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 200px;
+}
+#dons .box p{
+    font-size: 18px;
+}
+#dons .don-box .fermer{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+#dons .don-box{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    background: rgb(230, 228, 228);
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+}
+            /*--------Nos domaines-----------*/
+
+.accueil-domaine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: url(asset/images/bg-domaine.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+#domaines{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    overflow: hidden;
+}
+.domaines {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.domaines .bloc{
+    width: 100%;
+    height: 100%;
+}
+.domaines .block{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+    overflow: hidden;
+}
+.domaines .box{
+    width: 400px;
+    height: auto;
+    margin: 10px 0;
+    background: #e4e2e2;
+    border-radius: 0 0 10px 10px;
+}
+.domaines .box .titre{
+    background: #440066;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 50px;
+    margin: 0;
+    height: 70px;
+}
+.domaines .boxDomaine1{
+    transform: translateY(610px);
+    transition: all 0.5s ease-in-out;
+}
+.domaines .boxDomaine2{
+    transform: translateY(650px);
+    transition: all 0.5s ease-in-out;
+}
+.domaines .boxDomaine3{
+    transform: translateY(700px);
+    transition: all 0.5s ease-in-out;
+}
+.domaines .boxDomaine4{
+    transform: translateY(500px);
+    transition: all 0.80s ease-in-out;
+}
+.domaines .boxDomaine5{
+    transform: translateY(540px);
+    transition: all 1s ease-in-out;
+}
+.domaines .boxDomaine6{
+    transform: translateY(580px);
+    transition: all 1.20s ease-in-out;
+}
+.domaines .box:hover{
+    background: #440066;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+.domaines .box:hover img{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+.domaines .box p{
+    padding: 10px;
+    height: 110px;
+    font-size: 18px;
+}
+            /*-------Apropos----------*/
+.accueil-apropos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: url(asset/images/bg-apropos.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+#apropos{
+    width: 100%;
+    padding: 150px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    overflow: hidden;
+}
+.apropos{
+    height: 100%;
+}
+.apropos h2{
+    text-align: center;
+    font-weight: bolder;
+    color: #00b341;
+    
+}
+.apropos .block{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+}
+.apropos .texte p{
+    margin: 20px 0;
+    width: 80%; 
+    font-size: 24px; 
+}
+.apropos .texte{
+    width: 700px;
+    height: auto;
+    padding: 10px 20px;
+    margin: 0;
+    margin-top:70px;
+
+}
+.apropos .texte .presentation-1{
+    transform: translateX(-100px);
+    transition: all 0.80s ease-in-out;
+}
+.apropos .texte .presentation-2{
+    transform: translateX(-1050px);
+    transition: all 1.20s ease-in-out;
+}
+.apropos .texte .presentation-3{
+    transform: translateX(-1100px);
+    transition: all 1.60s ease-in-out;
+}
+.apropos .texte .presentation-btn{
+    transform: translateX(-1150px);
+    transition: all 2s ease-in-out;
+}
+.apropos .photo{
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid #00587d;
+    width: 370px;
+    height: 370px;
+    background: #e65d5d;
+    margin-top:70px;
+}
+.apropos .photo:hover{
+    transform: rotateY(180deg);
+    transition: all 2s ease;
+}
+            /*--------Mes projets-----------*/
+/*#projets{
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    overflow: hidden;
+}
+.projets {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.projets .bloc{
+    width: 100%;
+    height: 100%;
+}
+.projets h2{
+    padding: 50px;
+    color: #00587d;
+}
+.projets .block{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+.projets .box{
+    width: 350px;
+    height: 220px;
+    margin: 10px 0;
+    background: #e4e2e2;
+    padding: 10px;
+    border-radius: 10px;
+}
+.projets .boxProjet1{
+    transform: translateY(500px);
+    transition: all 0.80s ease-in-out;
+}
+.projets .boxProjet2{
+    transform: translateY(510px);
+    transition: all 1s ease-in-out;
+}
+.projets .boxProjet3{
+    transform: translateY(520px);
+    transition: all 1.20s ease-in-out;
+}
+.projets .boxProjet4{
+    transform: translateY(500px);
+    transition: all 0.80s ease-in-out;
+}
+.projets .boxProjet5{
+    transform: translateY(510px);
+    transition: all 1s ease-in-out;
+}
+.projets .boxProjet6{
+    transform: translateY(520px);
+    transition: all 1.20s ease-in-out;
+}
+.projets .box:hover{
+    position: relative;
+    top: 10px;
+    background: #c9f8de;
+    cursor: pointer;
+}
+.projets .box p{
+    padding: 10px;
+    height: 110px;
+    font-size: 18px;
+}
+.projets .box h5{
+    padding: 10px;
+    margin:5px 0;
+}*/
+
+#projets{
+    background: white;
+    padding: 50px;
+    overflow: hidden;
+}
+.projets {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding-bottom: 100px;
+}
+#projets .col-md-4 {
+    overflow: hidden;
+    cursor: pointer;
+}
+#projets .col-md-4:hover .texte {
+    transform: translateY(-100px);
+    transition: all 0.5s ease-in;
+    
+}
+#projets .texte{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: #fff;
+    height: 100px;
+    position: relative;
+    transform: translateY(60px);
+    background: linear-gradient(rgba(77, 72, 72, 0.4), rgba(0, 0, 0, 0.8)) ;
+}
+            /*-------Contacts--------*/
+.accueil-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: url(asset/images/bg-contact1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+#contacts{
+    width: 100%;
+    display: block;
+    background: black;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+.contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+#contacts span{
+    color: #00587d;
+}
+.contacts .block{
+    margin-top: 0;
+    width: 60%;
+    height: auto;
+}
+#contacts .texte{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.contacts form{
+    text-align: start;
+    width: 100%;
+    height: auto;
+}
+.contacts form .bloc {
+    width: 100%;
+    margin: 20px 0;
+}
+.contacts form .block-1 input{
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    padding: 2px;
+    margin-top: 5px;
+}
+.contacts form label {
+    color: white;
+}
+.contacts form .block-2 input{  
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    padding: 2px;
+    margin-top: 5px;
+}
+.contacts form .block-3 textarea{
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+}
+.contacts form .block-4{
+    width: 100%;
+    text-align: center;
+}
+            /*---------Footer-------*/
+footer{
+    background: white;
+    width: 100%;
+    height: auto;
+}
+footer .bloc{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+footer .patenaires .block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+footer .patenaires .box{
+    width: 150px;
+    margin: 10px 20px;
+    padding: 10px;
+}
+footer .patenaires .box img{
+    width: 100%;
+    height: 60px;
+}
+footer .patenaires .box p{
+    padding: 10px 0px;
+    font-size: 12px;
+    font-weight: bolder;
+}
+@media screen and (max-width: 1025px) {
+    .header b, .header p{
+      font-size: 10px;
+    }
+    .header .don .btn {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+}   
+@media screen and (max-width: 992px) {
+    .header{
+        display: block;
+        margin: 0 auto;
+    }
+    .header b, .header span{
+        display: none;
+    }
+    .header .information .col-md-3{
+        width: 6vw;
+    }
+    nav .lien ul{
+        padding: 20px;
+        z-index: 200;
+        display: none;
+        width: 200px;
+        border-top: #fff 1px solid;
+        position: absolute;
+        background: rgba(25, 135, 84, 0.5);
+        top: 90px;
+        right: 0;
+        animation: nav-ul 0.7s ease-out 0s;
+    }
+    @keyframes nav-ul {
+      0%{transform: translateX(200px);}
+      100%{transform: translateX(0px);}
+    }
+    nav .lien ul.active{
+      display: block;
+    }
+    nav .btn{
+      display: block;
+    }
+    nav .reseaux{
+      background-color: white;
+      width: 50%;
+      height: 50px;
+      border-bottom-right-radius: 50px;
+    }
+    nav .reseaux .liens{
+      width: 100%;
+      margin: 15px auto;
+      
+    }
+    nav .reseaux .lien div{
+      width: 20px !important;
+      height: auto;
+      margin: 2px 1px;
+      
+    }
+
+    .accueil .block{
+        align-items: start;
+    }
+    .accueil .texte p{
+        margin:20px auto;
+        width: 95%;
+        font-size: 40px;
+        color: white;
+        font-weight: 500;
+    }
+    #dons .don-box{
+        width: 90vw;
+    }
+} 
+
+  
